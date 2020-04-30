@@ -1,0 +1,75 @@
+** error 
+runtimeerror python 3.5 required al intentar instalar flask cors
+
+** crear copia de seguridad
+
+desde cmd windows
+vagrant global-status
+copiamos el nombre de name
+
+vagrant snapshot <name> <nombrecopiavagrant>
+
+vagrant snapshot list
+
+entramos a la maquina virtual
+vagrant up
+vagrant ssh
+
+ya dentro de la maquina virtual
+sudo apt-get install --reinstall python3-setuptools python3-wheel python3-pkg-resources;
+sudo rm -rf /usr/local/bin/pip3;
+sudo rm -rf /usr/local/bin/pip;
+sudo rm -rf /usr/local/lib/python3.4/dist-packages/setuptools;
+sudo rm -rf /usr/local/lib/python3.4/dist-packages/wheel;
+sudo rm -rf /usr/local/lib/python3.4/dist-packages/pkg_resources
+sudo apt-get install python3-pip
+pip3 --version
+
+** si hay problemas con la ruta en la instalacion de python3
+
+which python3
+copiar la ruta que sale en el comando
+vi ~/.bashrc
+modificar archivo ~/.bashrc
+al final agregar 
+    export pip3="/usr/bin/pip3"
+    guardar archivo
+    volver al directorio raiz con cd
+    sudo apt-get install python3-pip** error 
+    runtimeerror python 3.5 required al intentar instalar flask cors
+
+    ** crear copia de seguridad
+
+    desde cmd windows
+    vagrant global-status
+    copiamos el nombre de name
+
+    vagrant snapshot <name> <nombrecopiavagrant>
+
+    vagrant snapshot list
+
+    entramos a la maquina virtual
+    vagrant up
+    vagrant ssh
+
+    ya dentro de la maquina virtual
+    sudo apt-get install --reinstall python3-setuptools python3-wheel python3-pkg-resources;
+    sudo rm -rf /usr/local/bin/pip3;
+    sudo rm -rf /usr/local/bin/pip;
+    sudo rm -rf /usr/local/lib/python3.4/dist-packages/setuptools;
+    sudo rm -rf /usr/local/lib/python3.4/dist-packages/wheel;
+    sudo rm -rf /usr/local/lib/python3.4/dist-packages/pkg_resources
+    sudo apt-get install python3-pip
+    pip3 --version
+
+    ** si hay problemas con la ruta en la instalacion de python3
+
+    which python3
+    copiar la ruta que sale en el comando
+    vi ~/.bashrc
+    modificar archivo ~/.bashrc
+    al final agregar 
+        export pip3="/usr/bin/pip3"
+	guardar archivo
+	volver al directorio raiz con cd
+	sudo apt-get install python3-pip
