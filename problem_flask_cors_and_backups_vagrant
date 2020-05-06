@@ -7,7 +7,7 @@ desde cmd windows
 vagrant global-status
 copiamos el nombre de name
 
-vagrant snapshot <name> <nombrecopiavagrant>
+vagrant snapshot save <name> <nombrecopiavagrant>
 
 vagrant snapshot list
 
